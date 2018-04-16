@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+    
+</head>
+<body>
+
+    <div id="background">
+        <div id="loginContainer">
+            <div id="inputContainer">
+                <form id="loginForm" action="" method="POST">
+                    <h2>Login to your account</h2>
+                    <p>
+                    
+                    <label for="loginUsername">Username</label>
+                    <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. Jane Doe"  required>
+                    </p>
+                    <p>
+                    <label for="loginPassword">Password</label>
+                    <input id="loginPassword" name="loginPassword" type="password" placeholder="Your Password" required>
+                    </p>
+                    <button type="submit" name="loginButton">LOG IN</button>
+                    <div class="hasAccountText">
+                        <span id="hideLogin">Don't have an account yet? Sign up here.</span>
+                    </div>
+
+                </form>
+
+                <form id="registerForm" action="" method="POST">
+                    <h2>Create your free account</h2>
+                    <p>
+                    
+                    <label for="registerUsername">Username</label>
+                    <input id="registerUsername" name="registerUsername" type="text" placeholder="e.g. Jane Doe"  required>
+                    </p>
+
+                    <p>
+                    
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" name="firstName" type="text" placeholder="e.g. Jane"  required>
+                    </p>
+
+                    <p>
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" placeholder="e.g. Doe"  required>
+                    </p>
+
+                    <p>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="e.g. JaneDoe@gmail.com" required>
+                    </p>
+
+                    <p>
+                    <label for="emailConfirmation">Confirm Email</label>
+                    <input id="emailConfirmation" name="emailConfirmation" type="email" placeholder="e.g. JaneDoe@gmail.com" required>
+                    </p>
+
+                    <p>
+                    <label for="registerPassword">Password</label>
+                    <input id="registerPassword" name="registerPassword" type="password" placeholder="Your Password" required>
+                    </p>
+
+                    <p>
+                    <label for="passwordConfirmation">Confirm Password</label>
+                    <input id="passwordConfirmation" name="passwordConfirmation" type="password" placeholder="Your Password" required>
+                    </p>
+                    <button type="submit" name="registerButton">SIGN UP</button>
+                    <div class="hasAccountText">
+                        <span id="hideRegister">Already have an account? Log in here.</span>
+                    </div>
+                    
+                </form>
+            </div>
+            <div id="loginText">
+                <h1>Get great music now</h1>
+                <h2>Listen to songs for free</h2>
+                <ul>
+                <li>Discover music</li>
+                <li>Create your own playlists</li>
+                <li>Follow artists to keep up to date</li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</body>
+<script>
+
+    
+        $(document).ready(function() {
+            
+            $("#loginForm").show();
+            $("#registerForm").hide();
+
+        });
+    </script>
+</html>
